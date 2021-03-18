@@ -1,15 +1,16 @@
 /* ------------------------------------------------------------ *\
-	Nav
+	hero
 \* ------------------------------------------------------------ */
 
-.nav {
-	display: flex;
+.hero {
+	position: relative;
+	height: 803px;
 
-	h5 {
-		margin-left: 19px;
-	}
-
-	ul {
+	.hero__slider {
 		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 }

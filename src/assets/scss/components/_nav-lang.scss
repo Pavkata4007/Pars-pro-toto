@@ -1,0 +1,37 @@
+/* ------------------------------------------------------------ *\
+	nav-lang
+\* ------------------------------------------------------------ */
+
+.nav-lang {
+
+	ul {
+		display: flex;
+	}
+
+	li {
+		list-style: none;
+		position: relative;
+	}
+
+	.is-current a:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 4px;
+		height: 2px;
+		background: $c-white;
+	}
+
+	li + li {
+		margin-left: 18px;
+	}
+
+	a {
+		display: block;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 700;
+	}
+}

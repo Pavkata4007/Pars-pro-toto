@@ -12,7 +12,8 @@
         "prod": "cross-env NODE_ENV=production npm run start -- build"
     },
     "dependencies": {
-        "core-js": "^3.4.1"
+        "core-js": "^3.4.1",
+        "slick-carousel": "^1.8.1"
     },
     "devDependencies": {
         "@babel/core": "^7.1.0",
