@@ -17,19 +17,16 @@ function destroySlider($selector) {
 	}
 }
 
-
-
-
 const $sliderHero = $(".js-slider-hero .slider__slides");
 const sliderHero = {
-	infinite: false,
+	infinite: true,
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	fade: true,
 	dots: true,
 	arrows: true,
-	nextArrow: '<a class="slick-next slick-arrow"></a>',
-	prevArrow: '<a class="slick-prev slick-arrow"></a>',
+	nextArrow: '<a class="slick-next slick-arrow"><img src="assets/images/temp/right.png" alt="" /></a>',
+	prevArrow: '<a class="slick-prev slick-arrow"><img src="assets/images/temp/left.png" alt="" /></a>',
 	autoplay: false,
 	responsive: [
 		{
@@ -43,3 +40,26 @@ const sliderHero = {
 };
 
 initSlider($sliderHero, sliderHero);
+
+const $sliderMagizine = $(".js-slider-magazines .slider__slides");
+const sliderMagizine = {
+	infinite: true,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	dots: false,
+	arrows: true,
+	nextArrow: '<a class="slick-next slick-arrow"><img src="assets/images/temp/right.png" alt="" /></a>',
+	prevArrow: '<a class="slick-prev slick-arrow"><img src="assets/images/temp/left.png" alt="" /></a>',
+	autoplay: false,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			},
+		},
+	],
+};
+
+initSlider($sliderMagizine, sliderMagizine);

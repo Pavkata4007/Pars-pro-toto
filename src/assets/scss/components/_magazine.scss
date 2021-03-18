@@ -1,0 +1,57 @@
+/* ------------------------------------------------------------ *\
+	magazine
+\* ------------------------------------------------------------ */
+
+.magazine {
+
+	.magazine__image {
+		margin-bottom: 22px;
+	}
+
+	h6 {
+		margin-bottom: 0;
+		color: #333333;
+	}
+
+	.magazine__content {
+		font-size: 16px;
+		line-height: 1.13;
+		color: #666666;
+	}
+
+	.magazine__content p {
+		margin-bottom: 14px;
+	}
+
+	.magazine__actions a {
+		text-decoration: none;
+		color: $c-gold;
+		padding: 3px 0;
+		transition: background .4s;
+	}
+
+	.magazine__actions a:hover {
+		background-color: $c-gold;
+	}
+
+	.magazine__actions a:hover span {
+		color: $c-white;
+	}
+
+	.magazine__actions a svg path {
+		transition: fill .4s;
+	}
+
+	.magazine__actions a:hover svg path {
+		fill: $c-white;
+	}
+
+	.magazine__actions svg {
+		width: 10px;
+		height: 10px;
+	}
+
+	.magazine__actions span {
+		margin-left: 2px;
+	}
+}

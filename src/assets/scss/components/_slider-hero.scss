@@ -3,14 +3,63 @@
 \* ------------------------------------------------------------ */
 
 .slider-hero {
+	height: 800px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 
 	.slider__image {
 		background-size: cover;
 		background-position: center;
+		height: 800px;
+	}
+
+	.slick-arrow {
 		position: absolute;
-		top: 0;
-		left:0 ;
-		right: 0;
-		bottom: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 44px;
+		width: 40px;
+		z-index: 2;
+	}
+
+	.slick-next {
+		right: 111px;
+	}
+
+	.slick-prev {
+		left: 123px;
+	}
+
+	.slick-dots {
+		position: absolute;
+		bottom: 2%;
+		left: 15%;
+		display: flex;
+	}
+
+	.slick-dots button {
+		font-size: 0;
+		border: 0;
+		border-radius: 50%;
+		background-color: #666666;
+		height: 7px;
+		width: 7px;
+	}
+
+	.slick-dots li {
+		list-style: none;
+	}
+
+	.slick-dots li + li {
+		margin-left: 5px;
+	}
+
+	.slick-active button {
+		height: 15px;
+		width: 15px;
+		background-color: #fff;
 	}
 }

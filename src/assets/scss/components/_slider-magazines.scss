@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------ *\
+	slider-magazines
+\* ------------------------------------------------------------ */
+
+.slider-magazines {
+
+	.slider__slide {
+		padding:  0 10px;
+	}
+
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 3;
+	}
+
+	.slick-prev {
+		left: -110px;
+	}
+
+	.slick-next {
+		right: -110px;
+	}
+
+	.slick-list {
+		overflow: visible;
+	}
+}

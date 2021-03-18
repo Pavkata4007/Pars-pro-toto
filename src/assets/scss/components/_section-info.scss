@@ -1,0 +1,92 @@
+/* ------------------------------------------------------------ *\
+	section-info
+\* ------------------------------------------------------------ */
+
+.section-info {
+	padding: 48px 0 39px;
+	color: #666666;
+
+	.section__inner {
+		position: relative;
+	}
+
+	h2 {
+		font-weight: 400;
+		margin-bottom: 19px;
+		color: #454545;
+	}
+
+	.section__intro {
+		font-weight: 700;
+	}
+
+	.section__grid {
+		margin: 0 -17px;
+	}
+
+	.section__col {
+		padding: 0 17px;
+	}
+
+	.section__btn {
+		display: none;
+	}
+
+	.section__actions a {
+		text-decoration: none;
+		display: inline-block;
+		transition: background .4s;
+	}
+
+	.section__actions a:hover {
+		background: $c-gold;
+	}
+
+	.section__actions a:hover span {
+		color: $c-white;
+	}
+
+	.section__actions a svg path {
+		transition: fill .4s;
+	}
+
+	.section__actions a:hover svg path {
+		fill: $c-white;
+	}
+
+	.section__actions a span {
+		color: $c-gold;
+		margin: 0 3px;
+		transition: color .4s;
+	}
+
+	.section__actions a svg {
+		height: 10px;
+		width: 10px;
+	}
+
+	.section__images img:first-child {
+		position: absolute;
+		top: -290px;
+    	right: 74px;
+    	z-index: 1;
+	}
+
+	.section__images img:nth-child(2) {
+		position: absolute;
+		top: -349px;
+    	right: 38px;
+    	z-index: 2;
+	}
+
+	.section__images img:nth-child(3) {
+		position: absolute;
+		top: -311px;
+    	right: 2px;
+    	z-index: 3;
+	}
+}
+
+.section-info--alt {
+	padding: 48px 0 35px;
+}

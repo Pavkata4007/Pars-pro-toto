@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------ *\
+	section-magazines
+\* ------------------------------------------------------------ */
+
+.section-magazines {
+	background-color: #f7f7f7;
+	padding: 50px 0 47px;
+
+	.section__head h2 {
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+
+	.section__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+
+	.section__actions svg {
+		height: 10px;
+		width: 10px;
+	}
+
+	.section__actions a {
+		text-decoration: none;
+		background-color: $c-white;
+		border: 1px solid #dadada;
+		padding: 4px 50px;
+		transition: background .4s;
+	}
+
+	.section__actions a:hover {
+		background-color: $c-gold;
+	}
+
+	.section__actions a:hover span {
+		color: $c-white;
+	}
+
+	.section__actions span {
+		font-size: 16px;
+		color: $c-gold;
+		transition: color .4s;
+	}
+
+	.section__actions a svg path  {
+		transition: fill .4s;
+	}
+
+	.section__actions a:hover svg path {
+		fill: $c-white;
+	}
+}
