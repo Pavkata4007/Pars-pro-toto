@@ -1,0 +1,82 @@
+/* ------------------------------------------------------------ *\
+	article-alt
+\* ------------------------------------------------------------ */
+
+.article-alt {
+	display: flex;
+	flex-direction: column;
+
+	.article__image {
+		margin-bottom: 12px;
+	}
+
+	.article__inner {
+		flex: 1 1 auto;
+		background-color: #f7f7f7;
+		padding: 26px 33px 28px;
+	}
+
+	.article__inner h3 {
+		display: inline-block;
+	}
+
+	.article__title small {
+		color: #a91005;
+		font-size: 20px;
+		font-weight: 700;
+		margin: 0 28px;
+	}
+
+	.article__title {
+		margin-bottom: 6px;
+	}
+
+	span + span {
+		margin-left: 13px;
+	}
+
+	strong {
+		display: block;
+		font-weight: 400;
+		margin-bottom: 32px;
+	}
+
+	.article__actions a {
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	.article__actions a:hover span {
+		color: #a91005;
+	}
+
+	.article__actions a:hover svg path {
+		fill: #a91005;
+	}
+
+	.article__actions a svg path {
+		transition: fill .4s;
+	}
+
+	.article__actions svg {
+		height: 10px;
+		width: 10px;
+	}
+
+	.article__actions span {
+		color: #409a2e;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.13;
+		transition: color .4s;
+	}
+
+	.article__actions span small {
+		margin-left: 1px;
+		font-size: 16px;
+	}
+
+	.article__action + .article__action {
+		margin-top: -4px;
+	}
+}

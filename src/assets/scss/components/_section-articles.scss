@@ -4,12 +4,14 @@
 
 .section-articles {
 
+	padding-bottom: 45px;
+
 	.section__head {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 38px;
-		padding: 45px 30px 0;
+		margin-bottom: 39px;
+		padding: 46px 30px 0;
 		position: relative;
 	}
 
@@ -62,4 +64,8 @@
 	.section__actions a:hover svg path {
 		fill: $c-white;
 	}
+}
+
+.section-articles--alt {
+	padding-bottom: 76px;
 }

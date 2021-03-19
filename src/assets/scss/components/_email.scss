@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------ *\
+	email
+\* ------------------------------------------------------------ */
+
+.email {
+
+	a {
+		text-decoration: none;
+		font-size: 16px;
+		display: block;
+		line-height: 1.25;
+	}
+
+	a span {
+		margin: 0 5px;
+		transition: color .4s;
+	}
+
+	svg {
+		height: 10px;
+		width: 10px;
+	}
+
+	a:hover span {
+		color: #a91005;
+	}
+
+	a:hover svg path {
+		fill: #a91005;
+	}
+
+	a svg path {
+		transition: fill .4s;
+	}
+}

@@ -10,6 +10,10 @@
 	bottom: 0;
 	right: 0;
 
+	&:hover .slick-arrow {
+		opacity: 1;
+	}
+
 	.slider__image {
 		background-size: cover;
 		background-position: center;
@@ -23,6 +27,8 @@
 		height: 44px;
 		width: 40px;
 		z-index: 2;
+		opacity: 0;
+		transition: opacity .4s;
 	}
 
 	.slick-next {

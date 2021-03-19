@@ -3,4 +3,24 @@
 \* ------------------------------------------------------------ */
 
 .footer {
+	background-color: #b08e71;
+	color: $c-white;
+	padding: 58px 0 48px;
+
+	.footer__grid {
+		margin: 0 -15px;
+	}
+
+	.footer__col {
+		padding: 0 15px;
+	}
+
+	.footer__logo {
+		padding-top: 30px;
+		max-width: 258px;
+	}
+
+	.footer__telephone {
+		margin-bottom: 26px;
+	}
 }

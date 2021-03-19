@@ -34,12 +34,13 @@
 
 
 .mobile-nav--active span {
+	background-color: #fff;
 	transition: background .2s, top .2s, opacity .2s, transform .2s .25s;
 }
 
 .mobile-nav--active span:nth-child(3),
 .mobile-nav--active span:nth-child(1) {
-	top: 9px;
+	top: 20px;
 }
 
 .mobile-nav--active span:nth-child(2) {

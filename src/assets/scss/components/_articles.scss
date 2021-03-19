@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	articles
+\* ------------------------------------------------------------ */
+
+.articles {
+
+	.articles__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+
+	.articles__item {
+		max-width: 50%;
+		flex: 0 0 50%;
+		padding: 0 15px;
+		display: flex;
+	}
+}

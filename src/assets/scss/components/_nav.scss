@@ -9,9 +9,85 @@
 		margin-left: 19px;
 	}
 
+	&.is-active {
+		ul {
+			transform: translateX(0);
+		}
+
+		.mobile-nav {
+			position: fixed;
+			z-index: 110;
+			background-color: $c-gold;
+			height: 42px;
+		    width: 41px;
+		    top: 21px;
+		}
+	}
+
 	ul {
-		position: absolute;
-		opacity: 0;
-		pointer-events: none;
+		position: fixed;
+		background-color: $c-white;
+		height: 110vh;
+		top: -30px;
+		left: 0;
+		padding: 103px 48px;
+		width: 389px;
+		transform: translateX(-100%);
+		z-index: 109;
+	}
+
+	ul a {
+		color: #aaa9a9;
+		text-decoration: none;
+		display: block;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+		margin-bottom: 5px;
+		transition: color .4s;
+	}
+
+	ul small {
+		display: block;
+		margin-top: 57px;
+	}
+
+	ul a span {
+		font-size: 20px;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	ul li a {
+		letter-spacing: 0;
+		font-size: 26px;
+		margin-bottom: 0;
+		font-weight: 500;
+		color: #666666;
+		line-height: 2;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	ul a:hover {
+		color: #7f4b1d;
+	}
+
+	ul li a span {
+		font-size: 30px;
+	}
+
+	&.is-fixed {
+
+		h5 {
+			color: #666;
+		}
+
+		.mobile-nav span{
+			background-color: #666;
+		}
 	}
 }
