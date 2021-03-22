@@ -1,0 +1,23 @@
+/* ------------------------------------------------------------ *\
+	magazines
+\* ------------------------------------------------------------ */
+
+.magazines {
+    padding: 32px 0 30px;
+
+	.magazines__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+	}
+
+	.magazines__item {
+		max-width: 25%;
+		flex: 0 0 25%;
+		padding: 0 10px;
+	}
+}
+
+.magazines--alt {
+	background-color: #f7f7f7;
+}

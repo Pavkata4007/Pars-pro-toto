@@ -13,6 +13,16 @@
 		color: #333333;
 	}
 
+	.magazine__image a {
+		display: block;
+		text-decoration: none;
+		transition: opacity .4s;
+	}
+
+	.magazine__image a:hover {
+		opacity: .7;
+	}
+
 	.magazine__content {
 		font-size: 16px;
 		line-height: 1.13;

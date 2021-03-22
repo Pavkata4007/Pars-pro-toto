@@ -1,11 +1,16 @@
 /* ------------------------------------------------------------ *\
-	hero
+	section
 \* ------------------------------------------------------------ */
 
-.hero {
-	position: relative;
-	z-index: 0;
-	height: 800px;
-	background-size: cover;
-	background-position: center;
+.section {
+	padding: 48px 0 39px;
+
+	h2 {
+		font-weight: 400;
+		color: #454545;
+	}
+
+	.section__head {
+		margin-bottom: 4px;
+	}
 }
