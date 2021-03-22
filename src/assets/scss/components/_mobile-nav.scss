@@ -16,6 +16,45 @@
 		margin-top: 5px;
 	}
 
+	&:hover {
+		span {
+			animation: humburger-animation 1.5s infinite;
+		}
+
+		span:nth-child(2) {
+			animation: humburger-animation-second 1.5s infinite;
+		}
+	}
+
+	@keyframes humburger-animation {
+		0% {
+			transform: scaleX(1);
+		}
+
+		50% {
+			transform: scaleX(.7);
+		}
+
+		100% {
+			transform: scaleX(1);
+		}
+	}
+
+	@keyframes humburger-animation-second {
+
+		0% {
+			transform: scaleX(.7);
+		}
+
+		50% {
+			transform: scaleX(1);
+		}
+
+		100% {
+			transform: scaleX(.7);
+		}
+	}
+
 	span {
 		display: block;
 		width: 100%;
@@ -25,6 +64,7 @@
 		left: 0;
 		top: 0;
 		transition: top .2s, opacity .2s, transform .2s .25s;
+		transform-origin: left;
 
 		@include breakpoint-down(mobile) {
 			height: 5px;
@@ -33,6 +73,8 @@
 
 	span:nth-child(2) {
 		top: 10px;
+		transform: scaleX(.7);
+
 	}
 
 	span:nth-child(3) {
@@ -44,6 +86,15 @@
 .mobile-nav--active span {
 	background-color: #fff;
 	transition: background .2s, top .2s, opacity .2s, transform .2s .25s;
+}
+
+.mobile-nav--active span {
+	transform-origin: center;
+	animation: none !important;
+}
+
+.mobile-nav--active span:nth-child(2) {
+	animation: none !important;
 }
 
 .mobile-nav--active span:nth-child(3),

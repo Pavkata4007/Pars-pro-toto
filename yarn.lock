@@ -5504,6 +5504,18 @@ jpegtran-bin@^3.0.0:
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
 
+jquery-lazy@^1.7.11:
+  version "1.7.11"
+  resolved "https://registry.yarnpkg.com/jquery-lazy/-/jquery-lazy-1.7.11.tgz#f4146501ba64cad95cc5c20f184ac1b1d3712fe5"
+  integrity sha512-jNAOMwfgf+lYaOCc/atBVjbOzAIRW5BUyjQ4b4jJPkQM6I0zGZd4m/Y73ekfAlrQQDg3/Dge3YNhW7Cqjgi0UA==
+  dependencies:
+    jquery ">=1.7.2"
+
+jquery@>=1.7.2:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+
 js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.2.tgz#313b6274dda718f714d00b3330bbae6e38e90209"
