@@ -78,7 +78,7 @@
 		height: 7px;
 		width: 7px;
 		opacity: .8;
-		transition: transform .4s;
+		transition: transform .2s ease, background .2s ease;
 	}
 
 	.slick-dots li.is-active button {
@@ -103,6 +103,6 @@
 		background-color: #fff;
 		opacity: 1;
 		margin: 0 5px;
-		transition: transform .4s;
+		transition: transform .1s ease, background .2s ease;
 	}
 }
