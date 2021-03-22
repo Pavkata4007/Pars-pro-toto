@@ -12,3 +12,4 @@ import './modules/fixed-navigation';
 import './modules/mobile-nav';
 import './modules/more-info';
 import './modules/scroll-to-top';
+import './modules/slider-dots';
