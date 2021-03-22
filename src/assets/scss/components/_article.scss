@@ -31,7 +31,7 @@
 		line-height: 1.25;
 		color: $c-white;
 		text-align: right;
-		background-color: $c-gold;
+		background-color: #b08e71;
 		padding: 7px 22px 7px 19px;
 
 		@include breakpoint-down(mobile) {
@@ -177,5 +177,13 @@
 
 	.article__content {
 		padding-left: 26px;
+	}
+}
+
+
+.article--dif {
+
+	.article__inner {
+		padding-bottom: 72px;
 	}
 }

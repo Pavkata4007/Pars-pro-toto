@@ -88,3 +88,32 @@
 		}
 	}
 }
+
+.magazine--alt {
+
+	h6 {
+
+		@include breakpoint-down(mobile) {
+			font-size: 19px;
+		}
+	}
+
+	.magazine__image {
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 28px;
+		}
+	}
+
+	.magazine__content {
+
+		@include breakpoint-down(mobile) {
+			padding: 0 4px;
+			font-size: 19px;
+		}
+	}
+
+	.magazine__content p {
+		margin-bottom: 25px;
+	}
+}

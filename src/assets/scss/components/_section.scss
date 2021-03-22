@@ -5,6 +5,10 @@
 .section {
 	padding: 48px 0 39px;
 
+	@include breakpoint-down(mobile) {
+		padding: 51px 15px 40px;
+	}
+
 	h2 {
 		font-weight: 400;
 		color: #454545;

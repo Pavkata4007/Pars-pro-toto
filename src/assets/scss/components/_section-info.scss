@@ -131,11 +131,20 @@
 		color: $c-gold;
 		margin: 0 3px;
 		transition: color .4s;
+
+		@include breakpoint-down(mobile) {
+			font-size: 27px;
+		}
 	}
 
 	.section__actions a svg {
 		height: 10px;
 		width: 10px;
+
+		@include breakpoint-down(mobile) {
+			height: 13px;
+			width: 13px;
+		}
 	}
 
 	.section__images img:first-child {
@@ -193,4 +202,23 @@
 
 .section-info--dif {
 	padding: 48px 0 69px;
+
+	@include breakpoint-down(mobile) {
+		padding: 64px 3px 60px;
+	}
+
+	p {
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 43px;
+		}
+	}
+
+	.section__col + .section__col {
+		margin-top: -43px;
+	}
+
+	.section__actions {
+		margin-top: -21px;
+	}
 }
