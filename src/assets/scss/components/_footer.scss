@@ -5,22 +5,71 @@
 .footer {
 	background-color: #b08e71;
 	color: $c-white;
-	padding: 58px 0 48px;
+	padding: 58px 0 61px;
+	position: relative;
 
 	.footer__grid {
 		margin: 0 -15px;
+
+		@include breakpoint-down(mobile) {
+			margin: 0;
+			padding: 0 18px;
+		}
 	}
 
 	.footer__col {
 		padding: 0 15px;
+
+		@include breakpoint-down(mobile) {
+			padding: 0;
+		}
 	}
 
 	.footer__logo {
 		padding-top: 30px;
 		max-width: 258px;
+
+		@include breakpoint-down(mobile) {
+			padding-top: 14px;
+    		max-width: 468px;
+    		margin: 0 auto 38px;
+		}
 	}
 
 	.footer__telephone {
 		margin-bottom: 26px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 35px;
+		}
+	}
+
+	.footer__actions {
+		position: absolute;
+		right: 25px;
+   		bottom: 59px;
+   		display: none;
+
+   		@include breakpoint-down(mobile) {
+   			display: block;
+   		}
+
+   		@include breakpoint-down(mobile-medium) {
+   			bottom: 30px;
+   		}
+	}
+
+	.footer__actions a {
+		font-size: 27px;
+		color: #e6dbd1;
+		text-decoration: none;
+		display: block;
+	}
+
+	.footer__actions svg {
+		height: 16px;
+		width: 16px;
+		transform: rotate(180deg);
+		margin: 0 6px;
 	}
 }

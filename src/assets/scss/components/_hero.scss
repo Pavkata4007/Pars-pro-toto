@@ -8,4 +8,12 @@
 	height: 800px;
 	background-size: cover;
 	background-position: center;
+
+	@include breakpoint-down(mobile) {
+		height: 845px;
+	}
+
+	@include breakpoint-down(mobile-small) {
+		height: 680px;
+	}
 }

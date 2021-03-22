@@ -22,10 +22,18 @@
 		height: 2px;
 		background: $c-white;
 		transition: color .4s;
+
+		@include breakpoint-down(mobile) {
+			height: 4px;
+		}
 	}
 
 	li + li {
 		margin-left: 18px;
+
+		@include breakpoint-down(mobile) {
+			margin-left: 21px;
+		}
 	}
 
 	a {
@@ -35,6 +43,10 @@
 		font-size: 18px;
 		font-weight: 700;
 		transition: color .4s;
+
+		@include breakpoint-down(mobile) {
+			font-size: 25px;
+		}
 	}
 
 	a:hover {

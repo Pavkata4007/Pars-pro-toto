@@ -53,9 +53,18 @@ const sliderMagizine = {
 	autoplay: false,
 	responsive: [
 		{
-			breakpoint: 1024,
+			breakpoint: 768,
 			settings: {
 				slidesToShow: 1,
+				slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '20px',
+			},
+		},
+		{
+			breakpoint: 1023,
+			settings: {
+				slidesToShow: 3,
 				slidesToScroll: 1,
 			},
 		},

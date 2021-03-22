@@ -12,6 +12,10 @@
 	z-index: 21;
 	cursor: pointer;
 
+	@include breakpoint-down(mobile) {
+		margin-top: 5px;
+	}
+
 	span {
 		display: block;
 		width: 100%;
@@ -21,6 +25,10 @@
 		left: 0;
 		top: 0;
 		transition: top .2s, opacity .2s, transform .2s .25s;
+
+		@include breakpoint-down(mobile) {
+			height: 5px;
+		}
 	}
 
 	span:nth-child(2) {

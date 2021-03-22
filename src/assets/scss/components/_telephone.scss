@@ -9,6 +9,14 @@
 		font-size: 16px;
 		line-height: 1.25;
 		transition: color .4s;
+
+		@include breakpoint-down(mobile) {
+			font-size: 22px;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			font-size: 20px;
+		}
 	}
 
 	a:hover {

@@ -10,6 +10,14 @@
 	bottom: 0;
 	right: 0;
 
+	@include breakpoint-down(mobile) {
+		height: 845px;
+	}
+
+	@include breakpoint-down(mobile-small) {
+		height: 680px;
+	}
+
 	&:hover .slick-arrow {
 		opacity: 1;
 	}
@@ -18,6 +26,14 @@
 		background-size: cover;
 		background-position: center;
 		height: 800px;
+
+		@include breakpoint-down(mobile) {
+			height: 845px;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			height: 680px;
+		}
 	}
 
 	.slick-arrow {
@@ -33,10 +49,18 @@
 
 	.slick-next {
 		right: 111px;
+
+		@include breakpoint-down(mobile) {
+			right: 30px;
+		}
 	}
 
 	.slick-prev {
 		left: 123px;
+
+		@include breakpoint-down(mobile) {
+			left: 30px;
+		}
 	}
 
 	.slick-dots {

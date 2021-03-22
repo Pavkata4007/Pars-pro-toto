@@ -9,11 +9,24 @@
 		font-size: 16px;
 		display: block;
 		line-height: 1.25;
+
+		@include breakpoint-down(mobile) {
+			font-size: 22px;
+			margin-bottom: 4px;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			font-size: 20px;
+		}
 	}
 
 	a span {
 		margin: 0 5px;
 		transition: color .4s;
+
+		@include breakpoint-down(mobile) {
+			margin: 0 7px;
+		}
 	}
 
 	svg {

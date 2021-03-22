@@ -10,3 +10,5 @@ import './polyfills/object-fit';
 import './modules/handle-slider';
 import './modules/fixed-navigation';
 import './modules/mobile-nav';
+import './modules/more-info';
+import './modules/scroll-to-top';

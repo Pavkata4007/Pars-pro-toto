@@ -11,15 +11,28 @@
 	padding: 29px 0;
 	z-index: 10;
 
+	@include breakpoint-down(mobile) {
+		padding: 40px 0;
+	}
+
 	.header__inner {
 		display: flex;
 		justify-content: space-between;
 		position: relative;
+
+		@include breakpoint-down(mobile) {
+			padding: 0 18px;
+		}
 	}
 
 	.header__logo {
 		max-width: 423px;
 		padding-top: 4px;
+
+		@include breakpoint-down(mobile) {
+			max-width: 439px;
+    		padding-top: 77px;
+		}
 	}
 
 	.header__menu {

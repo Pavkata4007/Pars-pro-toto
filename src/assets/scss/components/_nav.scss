@@ -7,9 +7,14 @@
 
 	h5 {
 		margin-left: 19px;
+
+		@include breakpoint-down(mobile) {
+			font-size: 25px;
+		}
 	}
 
 	&.is-active {
+
 		ul {
 			transform: translateX(0);
 		}
@@ -35,6 +40,11 @@
 		transform: translateX(-100%);
 		z-index: 109;
 		transition: transform.6s;
+
+		@include breakpoint-down(mobile-medium) {
+			width: 100%;
+			overflow-y: auto;
+		}
 	}
 
 	ul a {
@@ -52,6 +62,10 @@
 	ul small {
 		display: block;
 		margin-top: 57px;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 25px;
+		}
 	}
 
 	ul a span {
@@ -71,6 +85,11 @@
 		line-height: 2;
 		text-decoration: none;
 		text-transform: uppercase;
+
+		@include breakpoint-down(mobile) {
+			font-size: 22px;
+			line-height: 1.6;
+		}
 	}
 
 	ul a:hover {

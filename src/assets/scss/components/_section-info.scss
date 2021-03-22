@@ -6,14 +6,37 @@
 	padding: 48px 0 39px;
 	color: #666666;
 
+	@include breakpoint-down(mobile) {
+		padding: 63px 0 39px;
+	}
+
 	.section__inner {
 		position: relative;
+
+		@include breakpoint-down(mobile) {
+			padding: 0 17px;
+		}
 	}
 
 	h2 {
 		font-weight: 400;
 		margin-bottom: 19px;
 		color: #454545;
+
+		@include breakpoint-down(mobile) {
+			line-height: 1.07;
+			margin-bottom: 27px;
+		}
+	}
+
+	p {
+
+		@include breakpoint-down(mobile) {
+			font-size: 27px;
+			line-height: 1.65;
+			margin-bottom: 45px;
+			letter-spacing: 0.006em;
+		}
 	}
 
 	.section__intro {
@@ -22,14 +45,64 @@
 
 	.section__grid {
 		margin: 0 -17px;
+
+		@include breakpoint-down(mobile) {
+			margin: 0;
+		}
 	}
 
 	.section__col {
 		padding: 0 17px;
+
+		@include breakpoint-down(mobile) {
+			padding: 0;
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
 	}
 
 	.section__btn {
 		display: none;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+			max-width: 165px;
+			margin-top: -25px;
+			font-size: 27px;
+			color: $c-gold;
+		}
+
+		&.is-hidden {
+			display: none;
+		}
+	}
+
+	.section__btn:hover {
+
+		color: $c-white;
+		background-color: $c-gold;
+	}
+
+	.section__btn svg {
+		height: 22px;
+		width: 15px;
+		margin: 0 8px;
+	}
+
+	.section__additional-info {
+
+		@include breakpoint-down(mobile) {
+			opacity: 0;
+			max-height: 0;
+			pointer-events: none;
+			transition: max-height.6s, opacity .4s;
+		}
+	}
+
+	.section__additional-info.is-active {
+		opacity: 1;
+		max-height: 100%;
+		pointer-events: all;
 	}
 
 	.section__actions a {
@@ -70,6 +143,10 @@
 		top: -290px;
     	right: 74px;
     	z-index: 1;
+
+    	@include breakpoint-down(tablet) {
+    		top: -350px;
+    	}
 	}
 
 	.section__images img:nth-child(2) {
@@ -77,6 +154,10 @@
 		top: -349px;
     	right: 38px;
     	z-index: 2;
+
+    	@include breakpoint-down(tablet) {
+    		top: -380px;
+    	}
 	}
 
 	.section__images img:nth-child(3) {
@@ -84,11 +165,30 @@
 		top: -311px;
     	right: 2px;
     	z-index: 3;
+
+    	@include breakpoint-down(tablet) {
+    		top: -355px;
+    	}
+	}
+
+	.section__images {
+
+		@include breakpoint-down(mobile) {
+			display: none;
+		}
 	}
 }
 
 .section-info--alt {
 	padding: 48px 0 35px;
+
+	@include breakpoint-down(mobile) {
+		padding: 62px 0 64px;
+	}
+
+	h2 {
+		letter-spacing: -0.004em;
+	}
 }
 
 .section-info--dif {
