@@ -26,7 +26,7 @@
 	.article__image span {
 		position: absolute;
 		top: 15px;
-		right: 0px;
+		right: 1px;
 		font-size: 16px;
 		line-height: 1.25;
 		color: $c-white;
@@ -111,6 +111,10 @@
 			font-size: 22px;
 			margin-bottom: 18px;
 		}
+
+		@include breakpoint-down(mobile-small) {
+			font-size: 18px;
+		}
 	}
 
 	.article__actions svg {
@@ -153,6 +157,10 @@
 
 		@include breakpoint-down(mobile) {
 			font-size: 22px;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			font-size: 18px;
 		}
 	}
 

@@ -18,6 +18,7 @@
 
 	.article__inner h3 {
 		display: inline-block;
+		color: #666666;
 	}
 
 	.article__title small {
@@ -35,10 +36,15 @@
 		margin-left: 13px;
 	}
 
+	span {
+		color: #666666;
+	}
+
 	strong {
 		display: block;
 		font-weight: 400;
 		margin-bottom: 32px;
+		color: #666666;
 	}
 
 	.article__actions a {
@@ -74,6 +80,7 @@
 	.article__actions span small {
 		margin-left: 1px;
 		font-size: 16px;
+		font-weight: 400;
 	}
 
 	.article__action + .article__action {

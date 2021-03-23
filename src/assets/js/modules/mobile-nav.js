@@ -4,6 +4,8 @@
  */
 
 const $mobileNav = $('.js-mobile-nav')
+const $window = $(window);
+const $body = $('body');
 
 $mobileNav.on('click', function() {
 	const $this = $(this);
@@ -12,5 +14,4 @@ $mobileNav.on('click', function() {
 
 	$this.toggleClass('mobile-nav--active');
 	$nav.toggleClass('is-active');
-
 });

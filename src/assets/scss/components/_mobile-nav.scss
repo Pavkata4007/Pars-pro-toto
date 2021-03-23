@@ -16,15 +16,15 @@
 		margin-top: 5px;
 	}
 
-	&:hover {
-		span {
-			animation: humburger-animation 1.5s infinite;
-		}
 
-		span:nth-child(2) {
-			animation: humburger-animation-second 1.5s infinite;
-		}
+	span {
+		animation: humburger-animation 1.5s infinite;
 	}
+
+	span:nth-child(2) {
+		animation: humburger-animation-second 1.5s infinite;
+	}
+
 
 	@keyframes humburger-animation {
 		0% {

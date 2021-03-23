@@ -108,11 +108,12 @@
 	.section__actions a {
 		text-decoration: none;
 		display: inline-block;
+		line-height: 1.2;
 		transition: background .4s;
 	}
 
 	.section__actions a:hover {
-		background: $c-gold;
+		background: #b08e71;
 	}
 
 	.section__actions a:hover span {

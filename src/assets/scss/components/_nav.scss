@@ -41,13 +41,17 @@
 		z-index: 109;
 		transition: transform.6s;
 
+		@include breakpoint-down(mobile) {
+			overflow-y: auto;
+
+		}
+
 		@include breakpoint-down(mobile-medium) {
 			width: 100%;
-			overflow-y: auto;
 		}
 	}
 
-	ul a {
+	ul li:last-child a {
 		color: #aaa9a9;
 		text-decoration: none;
 		display: block;
@@ -59,16 +63,8 @@
 		transition: color .4s;
 	}
 
-	ul small {
-		display: block;
-		margin-top: 57px;
 
-		@include breakpoint-down(mobile) {
-			margin-top: 25px;
-		}
-	}
-
-	ul a span {
+	ul li:last-child a span {
 		font-size: 20px;
 	}
 
@@ -108,6 +104,15 @@
 
 		.mobile-nav span{
 			background-color: #666;
+		}
+	}
+
+	ul li:last-child {
+		display: block;
+		margin-top: 57px;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 25px;
 		}
 	}
 }
