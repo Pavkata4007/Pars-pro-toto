@@ -48,10 +48,13 @@
 	}
 
 	.section__head .section__actions {
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		bottom: 114px;
+
+		@include breakpoint-down(mobile) {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 114px;
+		}
 	}
 
 	.section__actions svg {
@@ -75,6 +78,7 @@
 		@include breakpoint-down(mobile) {
 			padding: 6px 24px;
 			border: 2px solid #797979;
+			white-space: nowrap;
 		}
 	}
 

@@ -25,18 +25,10 @@ const sliderHero = {
 	fade: true,
 	dots: true,
 	arrows: true,
+	speed: 200,
 	nextArrow: '<a class="slick-next slick-arrow"><img src="assets/images/temp/right.png" alt="" /></a>',
 	prevArrow: '<a class="slick-prev slick-arrow"><img src="assets/images/temp/left.png" alt="" /></a>',
 	autoplay: false,
-	responsive: [
-		{
-			breakpoint: 1024,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-			},
-		},
-	],
 };
 
 initSlider($sliderHero, sliderHero);

@@ -19,3 +19,10 @@
 .shell--large {
 	max-width: 1210px;
 }
+
+.shell--alt {
+
+	@include breakpoint-down(mobile) {
+		padding: 0;
+	}
+}

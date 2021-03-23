@@ -16,5 +16,9 @@
 
 	.section__head {
 		margin-bottom: 4px;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 0;
+		}
 	}
 }
