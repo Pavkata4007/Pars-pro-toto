@@ -87,6 +87,11 @@
 			margin-left: 8px;
 		}
 	}
+
+	.magazine__content--alt {
+		opacity: 0;
+		transition: opacity .4s;
+	}
 }
 
 .magazine--alt {

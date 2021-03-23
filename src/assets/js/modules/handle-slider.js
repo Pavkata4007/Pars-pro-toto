@@ -43,6 +43,8 @@ const sliderMagizine = {
 	nextArrow: '<a class="slick-next slick-arrow"><img src="assets/images/temp/right.png" alt="" /></a>',
 	prevArrow: '<a class="slick-prev slick-arrow"><img src="assets/images/temp/left.png" alt="" /></a>',
 	autoplay: false,
+	autoplay: true,
+	autoplaySpeed: 1500,
 	responsive: [
 		{
 			breakpoint: 768,
@@ -51,6 +53,7 @@ const sliderMagizine = {
 				slidesToScroll: 1,
 				centerMode: true,
 				centerPadding: '20px',
+				autoplay: false,
 			},
 		},
 		{

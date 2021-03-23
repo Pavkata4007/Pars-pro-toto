@@ -33,4 +33,8 @@
 	.slick-list {
 		overflow: visible;
 	}
+
+	.slick-active .magazine__content--alt {
+		opacity: 1;
+	}
 }
