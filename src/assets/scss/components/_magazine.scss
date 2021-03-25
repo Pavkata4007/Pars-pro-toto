@@ -11,14 +11,6 @@
 
 	.magazine__image {
 		margin-bottom: 22px;
-		max-width: 255px;
-	}
-
-	.magazine__image img {
-
-		@include breakpoint-down(mobile) {
-			min-height: 382px;
-		}
 	}
 
 	h6 {
@@ -27,6 +19,7 @@
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 2px;
+			font-size: 19px;
 		}
 	}
 
@@ -40,7 +33,7 @@
 		color: #666666;
 
 		@include breakpoint-down(mobile) {
-			font-size: 22px;
+			font-size: 19px;
 		}
 	}
 
@@ -97,10 +90,6 @@
 	.magazine__content--alt {
 		opacity: 0;
 		transition: opacity .4s;
-
-		@include breakpoint-down(mobile) {
-			opacity: 1;
-		}
 	}
 }
 

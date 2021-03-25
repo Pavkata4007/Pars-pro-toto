@@ -29,28 +29,12 @@
 			flex: 0 0 50%;
 			padding: 39px 30px 40px;
 		}
-
-		@include breakpoint-down(mobile-medium) {
-			max-width: 100%;
-			flex: 0 0 100%;
-		}
-	}
-
-	.magazines__item:nth-child(even) {
-
-		@include breakpoint-down(mobile-medium) {
-			background-color: #f7f7f7;
-		}
 	}
 
 	.magazines__item--background {
 
 		@include breakpoint-down(mobile) {
 			background-color: #f7f7f7;
-		}
-
-		@include breakpoint-down(mobile-medium) {
-			background: none;
 		}
 	}
 }

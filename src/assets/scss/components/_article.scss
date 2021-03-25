@@ -46,7 +46,7 @@
 
 		@include breakpoint-down(mobile) {
 			top: 20px;
-			font-size: 22px;
+			font-size: 16px;
 			padding: 11px 33px 12px 26px;
 			right: 0;
 		}
@@ -59,7 +59,7 @@
 		font-weight: 700;
 
 		@include breakpoint-down(mobile) {
-			font-size: 27px;
+			font-size: 19px;
 		}
 	}
 
@@ -130,7 +130,7 @@
 		margin-bottom: 12px;
 
 		@include breakpoint-down(mobile) {
-			font-size: 22px;
+			font-size: 19px;
 			margin-bottom: 18px;
 		}
 
@@ -188,7 +188,7 @@
 		transition: color .4s;
 
 		@include breakpoint-down(mobile) {
-			font-size: 22px;
+			font-size: 19px;
 		}
 
 		@include breakpoint-down(mobile-small) {

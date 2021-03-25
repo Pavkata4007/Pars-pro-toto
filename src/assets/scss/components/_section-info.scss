@@ -32,7 +32,7 @@
 	p {
 
 		@include breakpoint-down(mobile) {
-			font-size: 27px;
+			font-size: 18px;
 			line-height: 1.65;
 			margin-bottom: 45px;
 			letter-spacing: 0.006em;
@@ -68,7 +68,7 @@
 			display: block;
 			max-width: 165px;
 			margin-top: -25px;
-			font-size: 27px;
+			font-size: 20px;
 			color: $c-gold;
 		}
 
@@ -84,8 +84,8 @@
 	}
 
 	.section__btn svg {
-		height: 22px;
-		width: 15px;
+		height: 14px;
+		width: 11px;
 		margin: 0 8px;
 	}
 
