@@ -8,6 +8,7 @@
 
 	.article__image {
 		margin-bottom: 12px;
+		border: 1px solid #e0e0e0;
 	}
 
 	.article__inner {
@@ -50,6 +51,7 @@
 	.article__actions a {
 		text-decoration: none;
 		display: inline-block;
+		color: #409a2e;
 	}
 
 	.article__actions a:hover span {

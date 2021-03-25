@@ -86,6 +86,8 @@
 .mobile-nav--active span {
 	background-color: #fff;
 	transition: background .2s, top .2s, opacity .2s, transform .2s .25s;
+	width: 34px;
+	left: 2px;
 }
 
 .mobile-nav--active span {
@@ -100,9 +102,13 @@
 .mobile-nav--active span:nth-child(3),
 .mobile-nav--active span:nth-child(1) {
 	top: 20px;
+
+	@include breakpoint-down(mobile) {
+		top: 19px;
+	}
 }
 
-.mobile-nav--active span:nth-child(2) {
+.mobile-nav--active .mobile-nav span:nth-child(2) {
 	opacity: 0;
 }
 

@@ -25,10 +25,10 @@ const sliderHero = {
 	fade: true,
 	dots: true,
 	arrows: true,
-	speed: 200,
+	autoplay: true,
+	speed: 1000,
 	nextArrow: '<a class="slick-next slick-arrow"><img src="assets/images/temp/right.png" alt="" /></a>',
 	prevArrow: '<a class="slick-prev slick-arrow"><img src="assets/images/temp/left.png" alt="" /></a>',
-	autoplay: false,
 };
 
 initSlider($sliderHero, sliderHero);
@@ -47,21 +47,52 @@ const sliderMagizine = {
 	autoplaySpeed: 1500,
 	responsive: [
 		{
+			breakpoint: 1023,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+			},
+		},
+		{
 			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '130px',
+				autoplay: false,
+			},
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '80px',
+				autoplay: false,
+			}
+		},
+		{
+			breakpoint: 470,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '50px',
+				autoplay: false,
+			}
+		},
+
+		{
+			breakpoint: 370,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				centerMode: true,
 				centerPadding: '20px',
 				autoplay: false,
-			},
-		},
-		{
-			breakpoint: 1023,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1,
-			},
+			}
 		},
 	],
 };

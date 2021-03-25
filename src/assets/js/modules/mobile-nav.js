@@ -3,11 +3,11 @@
  * Handle mobile-nav
  */
 
-const $mobileNav = $('.js-mobile-nav')
+const $navigation = $('.js-nav')
 const $window = $(window);
 const $body = $('body');
 
-$mobileNav.on('click', function() {
+$navigation.on('click', function() {
 	const $this = $(this);
 	const $nav = $('.js-nav');
 	const $button = $('.js-button');

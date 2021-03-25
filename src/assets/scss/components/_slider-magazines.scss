@@ -9,10 +9,7 @@
 	}
 
 	.slick-slide {
-
-		@include breakpoint-down(mobile) {
-			max-width: 320px;
-		}
+		height: auto;
 	}
 
 	&:hover .slick-arrow {

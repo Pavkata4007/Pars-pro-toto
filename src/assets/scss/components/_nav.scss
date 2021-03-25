@@ -5,12 +5,29 @@
 .nav {
 	display: flex;
 
+	&:hover h5:after {
+		transform: scaleX(1);
+	}
+
 	h5 {
 		margin-left: 19px;
+		position: relative;
 
 		@include breakpoint-down(mobile) {
 			font-size: 25px;
 		}
+	}
+
+	h5:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 2px;
+		height: 2px;
+		background: $c-white;
+		transition: transform .4s;
+		transform:scaleX(0);
 	}
 
 	&.is-active {
@@ -22,7 +39,7 @@
 		.mobile-nav {
 			position: fixed;
 			z-index: 110;
-			background-color: $c-gold;
+			background-color: #b18e72;
 			height: 42px;
 		    width: 41px;
 		    top: 21px;
@@ -43,6 +60,7 @@
 
 		@include breakpoint-down(mobile) {
 			overflow-y: auto;
+			padding: 100px 60px;
 
 		}
 
@@ -63,6 +81,10 @@
 		transition: color .4s;
 	}
 
+	li.is-active a {
+		color: #7f4b1d;
+	}
+
 
 	ul li:last-child a span {
 		font-size: 20px;
@@ -70,6 +92,7 @@
 
 	ul li {
 		list-style: none;
+		position: relative;
 	}
 
 	ul li a {
@@ -92,17 +115,24 @@
 		color: #7f4b1d;
 	}
 
+	.is-active a {
+
+	}
+
 	ul li a span {
 		font-size: 30px;
 	}
 
 	&.is-fixed {
+		background-color: $c-white;
+		padding: 5px;
 
 		h5 {
 			color: #666;
+			margin-bottom: 0;
 		}
 
-		.mobile-nav span{
+		.mobile-nav span {
 			background-color: #666;
 		}
 	}
@@ -114,5 +144,9 @@
 		@include breakpoint-down(mobile) {
 			margin-top: 25px;
 		}
+	}
+
+	ul li:last-child a:hover {
+		color: #666666;
 	}
 }

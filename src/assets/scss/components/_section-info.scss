@@ -110,10 +110,13 @@
 		display: inline-block;
 		line-height: 1.2;
 		transition: background .4s;
+		color: $c-gold;
 	}
 
 	.section__actions a:hover {
 		background: #b08e71;
+		padding: 0 5px;
+		margin: 0 -5px;
 	}
 
 	.section__actions a:hover span {
@@ -146,6 +149,10 @@
 			height: 13px;
 			width: 13px;
 		}
+	}
+
+	.section__images img {
+		max-width: 255px;
 	}
 
 	.section__images img:first-child {
@@ -216,7 +223,10 @@
 	}
 
 	.section__col + .section__col {
-		margin-top: -43px;
+
+		@include breakpoint-down(mobile) {
+			margin-top: -43px;
+		}
 	}
 
 	.section__actions {

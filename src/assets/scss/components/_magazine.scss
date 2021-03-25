@@ -4,8 +4,14 @@
 
 .magazine {
 
+	@include breakpoint-down(mobile) {
+		display: flex;
+		justify-content: center;
+	}
+
 	.magazine__image {
 		margin-bottom: 22px;
+		max-width: 255px;
 	}
 
 	.magazine__image img {
@@ -24,14 +30,8 @@
 		}
 	}
 
-	.magazine__image a {
-		display: block;
+	a {
 		text-decoration: none;
-		transition: opacity .4s;
-	}
-
-	.magazine__image a:hover {
-		opacity: .7;
 	}
 
 	.magazine__content {
@@ -52,27 +52,33 @@
 		}
 	}
 
-	.magazine__actions a {
+	.magazine__actions small {
 		text-decoration: none;
 		color: $c-gold;
 		padding: 3px 0;
 		transition: background .4s;
+		font-size: 16px;
 	}
 
-	.magazine__actions a:hover {
-		background-color: $c-gold;
+	a:hover .magazine__actions small {
+		background-color: #b08e71;
 	}
 
-	.magazine__actions a:hover span {
+	a:hover .magazine__actions  span {
 		color: $c-white;
 	}
 
-	.magazine__actions a svg path {
+	.magazine__actions svg path {
 		transition: fill .4s;
 	}
 
-	.magazine__actions a:hover svg path {
+	a:hover .magazine__actions svg path {
 		fill: $c-white;
+	}
+
+	a:hover .magazine__actions small {
+		padding: 0 5px;
+		margin: 0 -5px;
 	}
 
 	.magazine__actions svg {

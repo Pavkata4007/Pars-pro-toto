@@ -15,3 +15,4 @@ import './modules/scroll-to-top';
 import './modules/slider-dots';
 import './modules/lazy-loading';
 import './modules/aos';
+import './modules/active-nav';

@@ -14,7 +14,7 @@
 		position: relative;
 	}
 
-	.is-current a:after {
+	a:after {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -22,11 +22,16 @@
 		bottom: 4px;
 		height: 2px;
 		background: $c-white;
-		transition: color .4s;
+		transition: transform .4s;
+		transform: scaleX(0);
 
 		@include breakpoint-down(mobile) {
 			height: 4px;
 		}
+	}
+
+	.is-current a:after {
+		transform:scaleX(1);
 	}
 
 	li + li {
@@ -50,11 +55,7 @@
 		}
 	}
 
-	a:hover {
-		color: #a91005;
-	}
-
 	a:hover:after {
-		background-color: #a91005;
+		transform: scaleX(1);
 	}
 }

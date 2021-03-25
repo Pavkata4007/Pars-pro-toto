@@ -47,15 +47,11 @@
 	.footer__actions {
 		position: absolute;
 		right: 25px;
-   		bottom: 59px;
+   		bottom: 15px;
    		display: none;
 
    		@include breakpoint-down(mobile) {
    			display: block;
-   		}
-
-   		@include breakpoint-down(mobile-medium) {
-   			bottom: 30px;
    		}
 	}
 
