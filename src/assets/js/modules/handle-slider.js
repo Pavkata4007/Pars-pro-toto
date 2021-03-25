@@ -17,6 +17,8 @@ function destroySlider($selector) {
 	}
 }
 
+const dataSpeed = $('.js-slider-hero').data('speed') || 1500;
+
 const $sliderHero = $(".js-slider-hero .slider__slides");
 const sliderHero = {
 	infinite: true,
@@ -26,12 +28,14 @@ const sliderHero = {
 	dots: true,
 	arrows: true,
 	autoplay: true,
-	speed: 1000,
+	speed: dataSpeed,
 	nextArrow: '<a class="slick-next slick-arrow"><img src="assets/images/temp/right.png" alt="" /></a>',
 	prevArrow: '<a class="slick-prev slick-arrow"><img src="assets/images/temp/left.png" alt="" /></a>',
 };
 
 initSlider($sliderHero, sliderHero);
+
+const dataSpeedMagazine = $('.js-slider-hero').data('speed') || 1500;
 
 const $sliderMagizine = $(".js-slider-magazines .slider__slides");
 const sliderMagizine = {
@@ -44,7 +48,7 @@ const sliderMagizine = {
 	prevArrow: '<a class="slick-prev slick-arrow"><img src="assets/images/temp/left.png" alt="" /></a>',
 	autoplay: false,
 	autoplay: true,
-	autoplaySpeed: 1500,
+	autoplaySpeed: dataSpeedMagazine,
 	responsive: [
 		{
 			breakpoint: 1023,

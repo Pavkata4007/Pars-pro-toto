@@ -69,8 +69,12 @@
 
 	.slick-dots {
 		position: absolute;
-		bottom: 2%;
-		left: 15%;
+	    bottom: 22px;
+	    left: 50%;
+	    transform: translate(-50%);
+	    max-width: 1140px;
+	    padding: 0 15px;
+	    width: 100%;
 		display: flex;
 
 		@include breakpoint-down(mobile) {
