@@ -88,11 +88,8 @@
 	transition: background .2s, top .2s, opacity .2s, transform .2s .25s;
 	width: 34px;
 	left: 2px;
-}
-
-.mobile-nav--active span {
-	transform-origin: center;
 	animation: none !important;
+	transform-origin: center;
 }
 
 .mobile-nav--active span:nth-child(2) {
