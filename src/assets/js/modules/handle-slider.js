@@ -35,7 +35,7 @@ const sliderHero = {
 
 initSlider($sliderHero, sliderHero);
 
-const dataSpeedMagazine = $('.js-slider-hero').data('speed') || 1500;
+const dataSpeedMagazine = $('.js-slider-magazines').data('speed') || 1500;
 
 const $sliderMagizine = $(".js-slider-magazines .slider__slides");
 const sliderMagizine = {
