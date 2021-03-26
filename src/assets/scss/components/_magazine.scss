@@ -35,6 +35,10 @@
 		@include breakpoint-down(mobile) {
 			font-size: 19px;
 		}
+
+		@include breakpoint-down(mobile-medium) {
+			font-size: 15px;
+		}
 	}
 
 	.magazine__content p {
@@ -42,6 +46,10 @@
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 20px;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			margin-bottom: 15px;
 		}
 	}
 
@@ -100,12 +108,20 @@
 		@include breakpoint-down(mobile) {
 			font-size: 19px;
 		}
+
+		@include breakpoint-down(mobile-medium) {
+			font-size: 17px;
+		}
 	}
 
 	.magazine__image {
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 28px;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			margin-bottom: 20px;
 		}
 	}
 
@@ -115,9 +131,24 @@
 			padding: 0 4px;
 			font-size: 19px;
 		}
+
+		@include breakpoint-down(mobile-medium) {
+			font-size: 14px;
+		}
 	}
 
 	.magazine__content p {
 		margin-bottom: 25px;
+
+		@include breakpoint-down(mobile-medium) {
+			margin-bottom: 15px;
+		}
+	}
+
+	.magazine__actions small {
+
+		@include breakpoint-down(mobile-medium) {
+			font-size: 14px;
+		}
 	}
 }

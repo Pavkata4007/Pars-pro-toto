@@ -50,7 +50,7 @@ h2 {
 	font-size: 45px;
 
 	@include breakpoint-down(mobile) {
-		font-size: 40px;
+		font-size: 32px;
 	}
 }
 

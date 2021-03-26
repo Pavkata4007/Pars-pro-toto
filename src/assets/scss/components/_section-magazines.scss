@@ -32,7 +32,7 @@
 		}
 
 		@include breakpoint-down(mobile) {
-			padding: 0 17px;
+			padding: 0;
 			display: block;
 		}
 	}

@@ -84,7 +84,7 @@
 
 
 .mobile-nav--active span {
-	background-color: #fff;
+	background-color: #fff !important;
 	transition: background .2s, top .2s, opacity .2s, transform .2s .25s;
 	width: 34px;
 	left: 2px;
@@ -108,7 +108,7 @@
 	}
 }
 
-.mobile-nav--active .mobile-nav span:nth-child(2) {
+.mobile-nav--active span:nth-child(2) {
 	opacity: 0;
 }
 

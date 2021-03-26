@@ -29,6 +29,10 @@
 			flex: 0 0 50%;
 			padding: 39px 30px 40px;
 		}
+
+		@include breakpoint-down(mobile-medium) {
+			padding: 25px 15px;
+		}
 	}
 
 	.magazines__item--background {

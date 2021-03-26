@@ -34,7 +34,7 @@
 		@include breakpoint-down(mobile) {
 			font-size: 18px;
 			line-height: 1.65;
-			margin-bottom: 45px;
+			margin-bottom: 25px;
 			letter-spacing: 0.006em;
 		}
 	}
@@ -67,7 +67,7 @@
 		@include breakpoint-down(mobile) {
 			display: block;
 			max-width: 165px;
-			margin-top: -25px;
+			margin-top: -5px;
 			font-size: 20px;
 			color: $c-gold;
 		}
@@ -137,18 +137,13 @@
 		transition: color .4s;
 
 		@include breakpoint-down(mobile) {
-			font-size: 27px;
+			font-size: 18px;
 		}
 	}
 
 	.section__actions a svg {
 		height: 10px;
 		width: 10px;
-
-		@include breakpoint-down(mobile) {
-			height: 13px;
-			width: 13px;
-		}
 	}
 
 	.section__images img {

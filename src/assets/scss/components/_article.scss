@@ -28,7 +28,7 @@
 		@include breakpoint-down(mobile) {
 			position: absolute;
 			left: 34px;
-    		bottom: 177px;
+    		bottom: 180px;
     		max-width: 40%;
 		}
 	}
@@ -36,7 +36,7 @@
 	.article__image span {
 		position: absolute;
 		top: 15px;
-		right: 1px;
+		right: 0;
 		font-size: 16px;
 		line-height: 1.25;
 		color: $c-white;
@@ -48,7 +48,6 @@
 			top: 20px;
 			font-size: 16px;
 			padding: 11px 33px 12px 26px;
-			right: 0;
 		}
 	}
 
@@ -82,9 +81,17 @@
 		position: relative;
 		z-index: 2;
 
+		@include breakpoint-down(tablet) {
+			margin-top: -310px;
+		}
+
 		@include breakpoint-down(mobile) {
 			max-width: 37%;
 			flex: 0 0 37%;
+		}
+
+		@include breakpoint-down(admin-bar) {
+			margin-top: -220px;
 		}
 
 		@include breakpoint-down(mobile-alt) {
@@ -95,6 +102,11 @@
 		@include breakpoint-down(mobile-medium) {
 			max-width: 50%;
 			flex: 0 0 50%;
+			margin-top: -210px;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			margin-top: -110px;
 		}
 	}
 
@@ -113,7 +125,11 @@
 
 		@include breakpoint-down(mobile) {
 			display: block;
-			margin: 0 auto 210px;
+			margin: 0 auto 120px;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			margin: 0 auto 70px;
 		}
 	}
 
@@ -209,6 +225,34 @@
 
 	.article__entry {
 		margin-top: -112px;
+
+		@include breakpoint-down(tablet) {
+			margin-top: -310px;
+		}
+
+		@include breakpoint-down(mobile) {
+			max-width: 37%;
+			flex: 0 0 37%;
+		}
+
+		@include breakpoint-down(admin-bar) {
+			margin-top: -220px;
+		}
+
+		@include breakpoint-down(mobile-alt) {
+			max-width: 46%;
+			flex: 0 0 46%;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 50%;
+			flex: 0 0 50%;
+			margin-top: -130px;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			margin-top: -110px;
+		}
 	}
 
 	.article__inner {
@@ -227,6 +271,13 @@
 		padding-bottom: 72px;
 	}
 
+	.article__entry {
+
+		@include breakpoint-down(mobile-medium) {
+			margin-top: -130px;
+		}
+	}
+
 	.article__inner {
 
 		@include breakpoint-down(mobile) {
@@ -235,7 +286,7 @@
 	}
 
 	.article__meta {
-		bottom: 53px;
+		bottom: 60px;
 	}
 
 	.article__content img {
