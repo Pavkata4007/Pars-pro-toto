@@ -40,7 +40,7 @@
 		margin-bottom: 26px;
 
 		@include breakpoint-down(mobile) {
-			margin-bottom: 35px;
+			margin-bottom: 15px;
 		}
 	}
 
@@ -67,5 +67,12 @@
 		width: 16px;
 		transform: rotate(180deg);
 		margin: 0 6px;
+	}
+
+	h4 {
+
+		@include breakpoint-down(mobile) {
+			font-size: 24px;
+		}
 	}
 }

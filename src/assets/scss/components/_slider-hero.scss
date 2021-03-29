@@ -29,10 +29,19 @@
 
 		@include breakpoint-down(mobile) {
 			height: 845px;
+			display: none;
 		}
 
 		@include breakpoint-down(mobile-small) {
 			height: 680px;
+		}
+	}
+
+	.slider__image--mobile {
+		display: none;
+
+		@include breakpoint-down(mobile) {
+			display: block;
 		}
 	}
 

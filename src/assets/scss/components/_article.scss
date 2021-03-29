@@ -31,6 +31,10 @@
     		bottom: 180px;
     		max-width: 40%;
 		}
+
+		@include breakpoint-down(mobile-small) {
+			max-width: 35%;
+		}
 	}
 
 	.article__image span {
@@ -66,28 +70,26 @@
 		flex: 1 auto;
 		background-color: #f7f7f7;
 		display: flex;
-		flex-wrap: wrap;
 		padding: 30px 32px 45px;
 
 		@include breakpoint-down(mobile) {
 			padding: 30px 32px 120px;
 		}
+
+		@include breakpoint-down(mobile-small) {
+			padding: 15px 15px 120px 0;
+		}
 	}
 
 	.article__entry {
-		max-width: 50%;
-		flex: 0 0 50%;
+		max-width: 250px;
+		flex: 0 0 250px;
 		margin-top: -126px;
 		position: relative;
 		z-index: 2;
 
 		@include breakpoint-down(tablet) {
-			margin-top: -310px;
-		}
-
-		@include breakpoint-down(mobile) {
-			max-width: 37%;
-			flex: 0 0 37%;
+			margin-top: -200px;
 		}
 
 		@include breakpoint-down(admin-bar) {
@@ -95,18 +97,18 @@
 		}
 
 		@include breakpoint-down(mobile-alt) {
-			max-width: 46%;
-			flex: 0 0 46%;
 		}
 
 		@include breakpoint-down(mobile-medium) {
-			max-width: 50%;
-			flex: 0 0 50%;
-			margin-top: -210px;
+			max-width: 180px;
+			flex: 0 0 180px;
+			margin-top: -160px;
 		}
 
 		@include breakpoint-down(mobile-small) {
-			margin-top: -110px;
+			max-width: 150px;
+			flex: 0 0 150px;
+			margin-top: -100px;
 		}
 	}
 
@@ -114,6 +116,11 @@
 		max-width: 50%;
 		flex: 0 0 50%;
 		padding-left: 32px;
+
+		@include breakpoint-down(small-desktop) {
+			flex: 1;
+			padding-left: 15px;
+		}
 
 		@include breakpoint-down(mobile) {
 			padding-left: 16px;
@@ -146,12 +153,7 @@
 		margin-bottom: 12px;
 
 		@include breakpoint-down(mobile) {
-			font-size: 19px;
 			margin-bottom: 18px;
-		}
-
-		@include breakpoint-down(mobile-small) {
-			font-size: 18px;
 		}
 	}
 
@@ -202,14 +204,6 @@
 		line-height: 1;
 		font-size: 16px;
 		transition: color .4s;
-
-		@include breakpoint-down(mobile) {
-			font-size: 19px;
-		}
-
-		@include breakpoint-down(mobile-small) {
-			font-size: 18px;
-		}
 	}
 
 	.article__actions strong {
@@ -225,42 +219,9 @@
 
 	.article__entry {
 		margin-top: -112px;
-
-		@include breakpoint-down(tablet) {
-			margin-top: -310px;
-		}
-
-		@include breakpoint-down(mobile) {
-			max-width: 37%;
-			flex: 0 0 37%;
-		}
-
-		@include breakpoint-down(admin-bar) {
-			margin-top: -220px;
-		}
-
-		@include breakpoint-down(mobile-alt) {
-			max-width: 46%;
-			flex: 0 0 46%;
-		}
-
-		@include breakpoint-down(mobile-medium) {
-			max-width: 50%;
-			flex: 0 0 50%;
-			margin-top: -130px;
-		}
-
-		@include breakpoint-down(mobile-small) {
-			margin-top: -110px;
-		}
 	}
 
 	.article__inner {
-	    padding: 16px 18px 16px 32px;
-	}
-
-	.article__content {
-		padding-left: 26px;
 	}
 }
 
@@ -268,13 +229,17 @@
 .article--dif {
 
 	.article__inner {
-		padding-bottom: 72px;
+		padding-bottom: 25px;
 	}
 
 	.article__entry {
 
 		@include breakpoint-down(mobile-medium) {
 			margin-top: -130px;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			margin-top: -110px;
 		}
 	}
 
@@ -286,17 +251,47 @@
 	}
 
 	.article__meta {
-		bottom: 60px;
+		bottom: 13px;
+	}
+
+	.article__content img {
+
+		@include breakpoint-down(tablet) {
+			width: 160px;
+		}
+
+		@include breakpoint-down(admin-bar) {
+			width: unset;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 100px;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			margin-bottom: 120px;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			margin-bottom: 80px;
+		}
+	}
+
+	.article__inner--alt .article__entry {
+
+		@include breakpoint-down(mobile) {
+			margin-top: -190px;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			margin-top: -110px;
+		}
 	}
 
 	.article__content img {
 
 		@include breakpoint-down(mobile-medium) {
-			margin-bottom: 160px;
-		}
-
-		@include breakpoint-down(mobile-small) {
-			margin-bottom: 80px;
+	    	margin-bottom: 85px;
 		}
 	}
 }

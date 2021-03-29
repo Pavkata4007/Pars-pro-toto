@@ -34,6 +34,7 @@
 		@include breakpoint-down(mobile) {
 			padding: 0;
 			display: block;
+			padding-left: 15px;
 		}
 	}
 
@@ -54,7 +55,6 @@
 
 		@include breakpoint-down(mobile-medium) {
 			width: 250px;
-
 		}
 	}
 
@@ -91,14 +91,6 @@
 		font-size: 16px;
 		color: $c-gold;
 		transition: color .4s;
-
-		@include breakpoint-down(mobile) {
-			font-size: 22px;
-		}
-
-		@include breakpoint-down(mobile-medium) {
-			font-size: 20px;
-		}
 	}
 
 	.section__actions a svg path  {

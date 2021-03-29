@@ -6,8 +6,6 @@
 	position: relative;
 	z-index: 0;
 	height: 800px;
-	background-size: cover;
-	background-position: center;
 	max-width: 1680px;
 	margin: 0 auto;
 
@@ -17,5 +15,27 @@
 
 	@include breakpoint-down(mobile-small) {
 		height: 680px;
+	}
+
+	.hero__image {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top:0 ;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+
+		@include breakpoint-down(mobile) {
+			display: none;
+		}
+	}
+
+	.hero__image--mobile {
+		display: none;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
 	}
 }

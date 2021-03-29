@@ -101,10 +101,6 @@
 		font-size: 16px;
 		color: $c-gold;
 		transition: color .4s;
-
-		@include breakpoint-down(mobile) {
-			font-size: 22px;
-		}
 	}
 
 	.section__actions a svg path  {

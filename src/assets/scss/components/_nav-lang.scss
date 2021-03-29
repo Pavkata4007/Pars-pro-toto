@@ -24,10 +24,6 @@
 		background: $c-white;
 		transition: transform .4s;
 		transform: scaleX(0);
-
-		@include breakpoint-down(mobile) {
-			height: 4px;
-		}
 	}
 
 	.is-current a:after {
@@ -49,10 +45,6 @@
 		font-size: 18px;
 		font-weight: 700;
 		transition: color .4s;
-
-		@include breakpoint-down(mobile) {
-			font-size: 25px;
-		}
 	}
 
 	a:hover:after {

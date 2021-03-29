@@ -213,14 +213,14 @@
 	p {
 
 		@include breakpoint-down(mobile) {
-			margin-bottom: 43px;
+			margin-bottom: 25px;
 		}
 	}
 
 	.section__col + .section__col {
 
 		@include breakpoint-down(mobile) {
-			margin-top: -43px;
+			margin-top: -25px;
 		}
 	}
 

@@ -5,6 +5,10 @@
 .nav {
 	display: flex;
 
+	@include breakpoint-down(mobile) {
+		align-items: center;
+	}
+
 	&:hover h5:after {
 		transform: scaleX(1);
 	}
@@ -12,10 +16,7 @@
 	h5 {
 		margin-left: 19px;
 		position: relative;
-
-		@include breakpoint-down(mobile) {
-			font-size: 25px;
-		}
+		margin-bottom: 0;
 	}
 
 	h5:after {
